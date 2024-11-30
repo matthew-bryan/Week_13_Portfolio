@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Experiments Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -24,7 +25,33 @@
     <main>
         <section id="textual-ai">
             <h2>Textual AI Experiments</h2>
-            <p>Explore projects that delve into natural language processing, sentiment analysis, and AI-based writing tools.</p>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <!-- Project Card 1 -->
+                    <div class="carousel-card">
+                        <img src="project1.jpg" alt="Project 1 Image" class="card-image">
+                        <h3>Project Title 1</h3>
+                        <p>Date: September 2024</p>
+                        <p>Tools: GPT-4, Python</p>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="carousel-card">
+                        <img src="project2.jpg" alt="Project 2 Image" class="card-image">
+                        <h3>Project Title 2</h3>
+                        <p>Date: October 2024</p>
+                        <p>Tools: OpenAI API, JavaScript</p>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="carousel-card">
+                        <img src="project3.jpg" alt="Project 3 Image" class="card-image">
+                        <h3>Project Title 3</h3>
+                        <p>Date: November 2024</p>
+                        <p>Tools: Hugging Face, TensorFlow</p>
+                    </div>
+                </div>
+                <button class="carousel-button prev">←</button>
+                <button class="carousel-button next">→</button>
+            </div>
         </section>
         <section id="visual-ai">
             <h2>Visual AI Experiments</h2>
