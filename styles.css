@@ -36,10 +36,109 @@ nav {
 }
 
 .menu a {
+    font-family: 'Montserrat', Arial, sans-serif; /* Montserrat with Arial as fallback */
     text-decoration: none;
     color: #00ff99;
     font-weight: bold;
     font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00cc88;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    font-family: 'Montserrat', Arial, sans-serif; /* Montserrat with Arial as fallback */
+    color: #00ff99;
+    border-bottom: 2px solid #00cc88;
+    padding-bottom: 5px;
+    }
+    
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1e1e1e;
+    color: #888;
+}
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #d0d0d0;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+/* Banner Container */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Adjust height for a narrower banner */
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the banner scales correctly */
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(200, 200, 200, 0.8); /* Light gray background with transparency */
+    color: #121212;
+    padding: 10px 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #1e1e1e;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: bold;
+    font-size: 32px;
     transition: color 0.3s;
 }
 
@@ -67,5 +166,4 @@ footer {
     text-align: center;
     padding: 10px 0;
     background-color: #1e1e1e;
-    color: #888;
-}
+    color: #888
