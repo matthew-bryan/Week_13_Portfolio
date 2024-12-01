@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title 1</title>
+    <title>90s Video Game Rater: A Nostalgic Recommendation System</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <header>
         <div class="banner-container">
             <img src="..banner.jpg" alt="Portfolio Banner" class="banner">
-            <div class="banner-text">Project Title 1</div>
+            <div class="banner-text">90s Video Game Rater: A Nostalgic Recommendation System</div>
         </div>
         <nav>
             <ul class="menu">
@@ -27,13 +27,26 @@
         <section id="description">
             <h2>Project Description</h2>
             <img src="project1.jpg" alt="Project 1 Image" class="project-detail-image">
-            <p>Detailed description of the project goes here. Explain the tools, goals, and results in depth.</p>
+            <p>This project presents a 1990s video game recommendation system styled after the early web aesthetic of the same era. Designed to capture the spirit of the time, the system provides personalized game recommendations based on user preferences across multiple categories, offering a dynamic and fun way to revisit the golden age of gaming.</p>
+
+                <p>Using a dataset of 150 popular video games from the 1990s, the project leverages a JSON-based database to match user preferences in categories like genre, publisher, release platform, and more. The interactive interface employs sliders to refine recommendations, allowing users to discover games that align with their interests. When insufficient data is available for a specific preference, the system provides thoughtful fallback messages, ensuring transparency about its limitations.</p>
+                
+                    <p>The project wasn’t without its challenges. Building the dataset required iterative refinement, as ChatGPT struggled with filtering games strictly by decade, occasionally including post-1999 titles. Manual intervention and tailored prompts resolved these discrepancies, highlighting the subjective nature of classification. Debugging the HTML and JavaScript for the interface was another hurdle, as ChatGPT intermittently truncated the code output, requiring incremental troubleshooting. Despite these frustrations, the process underscored the complexities and limitations of generative AI as a tool for collaborative creation.</p>
+                
+                        <p>Inspired by Safiya Noble's discussion of subjectivity in classification (Algorithms of Oppression), the project reflects on how genre choices and data structuring influence recommendations. For instance, genres were curated with user experience in mind, adding broader categories like “Action/Adventure” to accommodate games that defy traditional classification. This decision-making process mirrors the subjective deployment of categories in algorithmic systems, demonstrating how even seemingly neutral tools are shaped by human intention and cultural context.</p>
+                
+                            <p>Ultimately, 90s Video Game Rater blends nostalgia with functionality, serving as both a playful tool for retro gaming enthusiasts and a thoughtful reflection on how recommendations are shaped by design choices.</p>
         </section>
 
         <section id="tools">
             <h2>Tools & Details</h2>
             <p><strong>Date:</strong> September 2024</p>
-            <p><strong>Tools:</strong> GPT-4, Python</p>
+            <p><strong>Tools:</strong></p>
+            <p>HTML, CSS, JavaScript (for the web interface)</p>
+<p>JSON (for the game database)</p>
+<p>ChatGPT (for dataset creation and coding support)</p>
+<p>Teachable Machine (optional mention if used for any feature testing)</p>
+
         </section>
     </main>
 

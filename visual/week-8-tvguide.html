@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title 1</title>
+    <title>Classifying Nostalgia: A Machine Learning Exploration of TV Guide Covers</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <header>
         <div class="banner-container">
             <img src="..banner.jpg" alt="Portfolio Banner" class="banner">
-            <div class="banner-text">Project Title 1</div>
+            <div class="banner-text">Classifying Nostalgia: A Machine Learning Exploration of TV Guide Covers</div>
         </div>
         <nav>
             <ul class="menu">
@@ -27,13 +27,23 @@
         <section id="description">
             <h2>Project Description</h2>
             <img src="project1.jpg" alt="Project 1 Image" class="project-detail-image">
-            <p>Detailed description of the project goes here. Explain the tools, goals, and results in depth.</p>
+            <p>This project explores machine learning and visual classification by training a model to identify TV Guide covers from distinct decades. Using an archive of TV Guide covers spanning 1953 to the present, the experiment highlights how visual design elements reflect shifts in pop culture and aesthetics over time.</p>
+
+                <p>The training set was developed in Teachable Machine with 20 covers each from 1963, 1993, and 2023. These years were chosen to maximize the potential differences in design trends: the simplicity and minimalism of the 1960s, the muted palettes and white backgrounds of the 1990s, and the vibrant, complex designs of the 2020s. The model was tested with a separate set of 9 images, including covers with distinctive designs. While the model performed well overall, outliers like a Christmas-themed 1963 cover were misclassified due to their unique designs. Interestingly, an image of Captain Kirk from a 1993 nostalgia-themed issue, resembling 1960s covers, was correctly identified—showing the model’s ability to account for subtle temporal cues.</p>
+                
+                    <p>The project also experimented with expanding the functionality of the machine learning workflow using ChatGPT's ""4o with canvas"" interface. While the chatbot facilitated code tweaking and provided valuable insights, implementing advanced features like activation tables or heat maps to visualize the model’s predictions proved challenging. Static information such as confusion matrices and model summaries were successfully incorporated, but attempts to allow multiple image uploads or dynamic visualizations ran into technical barriers. These challenges underscore the potential—and the limitations—of current generative AI tools in facilitating deeper understanding of machine learning models.</p>
+                
+                        <p>By combining machine learning and pop culture history, this project demonstrates how archives like TV Guide covers can serve as a lens for understanding design trends while inviting technical experimentation with AI interfaces. The insights gained encourage further exploration into how models interpret visual data and how these processes can be made more transparent.</p>
         </section>
 
         <section id="tools">
             <h2>Tools & Details</h2>
-            <p><strong>Date:</strong> September 2024</p>
-            <p><strong>Tools:</strong> GPT-4, Python</p>
+            <p><strong>Date:</strong> October 2024</p>
+            <p><strong>Tools:</strong></p>
+            <p>Teachable Machine (for model creation)</p>
+<p>ChatGPT 4o with canvas (for code development)</p>
+<p>TensorFlow.js (for integrating model into a web application)</p>
+<p>TV Guide cover archive (as dataset)</p>
         </section>
     </main>
 
