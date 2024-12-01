@@ -14,19 +14,24 @@ header {
 .banner-container {
     position: relative;
     width: 100%;
-    height: 250px; /* Adjust height for a narrower banner */
-    overflow: hidden;
+    max-height: 300px; /* Cap the maximum height */
+    overflow: hidden; /* Hide excess content */
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: flex-end; /* Align text near the bottom */
+    padding: 0; /* Remove unnecessary padding */
+    box-sizing: border-box; /* Include padding in dimensions */
 }
 
 .banner {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the banner scales correctly */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Keep the image aspect ratio and fill the space */
     display: block;
 }
 
 .banner-text {
-    position: absolute;
+    position: absolute; /* Place text over the banner */
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -38,6 +43,23 @@ header {
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 90%; /* Prevent text from spanning too wide */
+    white-space: normal; /* Allow wrapping */
+    text-align: center; /* Center the text */
+}
+
+@media (max-width: 768px) {
+    .banner-text {
+        font-size: 40px; /* Smaller font for smaller screens */
+        padding: 8px 15px; /* Adjust padding for better fit */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text {
+        font-size: 30px; /* Even smaller font for narrow screens */
+        padding: 5px 10px; /* Minimal padding */
+    }
 }
 
 /* Navigation Menu */
