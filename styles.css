@@ -114,7 +114,7 @@ footer a.portfolio-link:active {
 
 footer a.portfolio-link:hover {
     background-color: #00ff99; /* Background color on hover */
-    color: #121212; /* Text color contrasts with the new background */
+    color: #121212 !important; /* Text color contrasts with the new background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
     transform: translateY(-2px); /* Slight movement on hover for emphasis */
     transition: all 0.3s ease-in-out; /* Smooth animation */
@@ -275,3 +275,12 @@ footer a.portfolio-link:hover {
     }
 }
 
+.project-detail-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 400px; /* Restricts the maximum width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 20px auto; /* Centers the image with vertical spacing */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
