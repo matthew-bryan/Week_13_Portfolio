@@ -11,82 +11,6 @@ header {
     text-align: center;
 }
 
-.banner {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Navigation Menu */
-nav {
-    background-color: #1e1e1e;
-    padding: 10px 0;
-}
-
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.menu li {
-    margin: 0 15px;
-}
-
-.menu a {
-    font-family: 'Montserrat', Arial, sans-serif; /* Montserrat with Arial as fallback */
-    text-decoration: none;
-    color: #00ff99;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.menu a:hover {
-    color: #00cc88;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-section {
-    margin: 40px 0;
-}
-
-h2 {
-    font-family: 'Montserrat', Arial, sans-serif; /* Montserrat with Arial as fallback */
-    color: #00ff99;
-    border-bottom: 2px solid #00cc88;
-    padding-bottom: 5px;
-    }
-    
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #1e1e1e;
-    color: #888;
-}
-/* General Reset */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #d0d0d0;
-}
-
-/* Header */
-header {
-    text-align: center;
-}
-
-/* Banner Container */
 .banner-container {
     position: relative;
     width: 100%;
@@ -135,10 +59,11 @@ nav {
 }
 
 .menu a {
+    font-family: 'Montserrat', Arial, sans-serif;
     text-decoration: none;
     color: #00ff99;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 16px;
     transition: color 0.3s;
 }
 
@@ -156,6 +81,7 @@ section {
 }
 
 h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
     color: #00ff99;
     border-bottom: 2px solid #00cc88;
     padding-bottom: 5px;
@@ -166,7 +92,8 @@ footer {
     text-align: center;
     padding: 10px 0;
     background-color: #1e1e1e;
-    color: #888
+    color: #888;
+}
 
 /* Carousel Container */
 .carousel {
@@ -177,18 +104,21 @@ footer {
     overflow: hidden; /* Hide non-visible cards */
 }
 
+/* Carousel Track */
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
+/* Carousel Card */
 .carousel-card {
     min-width: 100%; /* Ensure each card takes up the full width */
-    flex-shrink: 0;
+    flex-shrink: 0; /* Prevent cards from shrinking */
     padding: 20px;
     text-align: center;
     background-color: #1e1e1e;
     color: #d0d0d0;
+    border-right: 1px solid #333; /* Optional for visual clarity */
 }
 
 .card-image {
@@ -199,6 +129,33 @@ footer {
     border-radius: 5px;
 }
 
+/* Ensure the anchor behaves like a full card in the flexbox */
+.carousel-card-link {
+    display: flex; /* Allow flex layout to apply properly */
+    min-width: 100%; /* Ensure the link takes up the full width */
+    flex-shrink: 0; /* Prevent shrinking */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Use inherited text color */
+}
+
+/* Ensure child card inside link stays styled */
+.carousel-card-link .carousel-card {
+    width: 100%; /* Make the card fill the parent link */
+    padding: 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #d0d0d0;
+    border-right: 1px solid #333; /* Optional visual clarity */
+}
+
+/* Optional hover effects for links */
+.carousel-card-link:hover .carousel-card {
+    transform: scale(1.02); /* Add hover effect */
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Highlight card */
+}
+
+/* Carousel Buttons */
 .carousel-button {
     position: absolute;
     top: 50%;
