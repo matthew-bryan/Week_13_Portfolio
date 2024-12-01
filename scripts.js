@@ -40,3 +40,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = lightbox.querySelector('img'); // Target the single lightbox image
+    const galleryImages = document.querySelectorAll('.gallery img'); // Select all gallery images
+
+    galleryImages.forEach((image) => {
+        image.addEventListener('click', () => {
+            lightbox.style.display = 'flex'; // Show the lightbox
+            lightboxImage.src = image.src; // Use the clicked image's source
+            lightboxImage.alt = image.alt; // Use the clicked image's alt text
+        });
+    });
+
+    // Close the lightbox when clicking anywhere on it
+    lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none'; // Hide the lightbox
+    });
+});
