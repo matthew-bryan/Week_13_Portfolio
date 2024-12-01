@@ -26,7 +26,7 @@
     <main>
         <section id="description">
             <h2>Project Description</h2>
-            <img src="project1.jpg" alt="Project 1 Image" class="project-detail-image">
+            <img src="../assets/week-12-chart4.png" alt="A heatmap visualizing sentiment polarity and subjectivity across various literacy types on Wikipedia pages, with emotional literacy showing the highest subjectivity." class="project-detail-image">
             <p>This project connects distant reading techniques with a critical examination of "critical AI literacy" discourse, exploring how search engines and Wikipedia shape perceptions of literacy in the age of AI. Through two distinct datasets—Google Programmable Search Engine (PSE) results and Wikipedia pages about various literacies—the project demonstrates how computational methods can uncover patterns in cultural and educational discourse.</p>
 
                 <p>The first dataset focused on the top 100 Google search results for "critical AI literacy" and "AI literacy," filtered across both the .edu domain and the broader web. Metadata such as page titles, snippets, and URLs were analyzed to identify word frequency patterns, revealing trends like the prominence of "writing" within .edu results for "critical AI literacy." Domain analysis further highlighted how search algorithms emphasize particular sources, offering a window into how these terms are framed within academic and general contexts. While the limited dataset imposed by Google's search result cap presented challenges, it also aligned with Safiya Noble’s critique of search engine ranking systems in <em>Algorithms of Oppression</em>.</p>
@@ -38,9 +38,31 @@
                             <p>By combining computational analysis with critical perspectives, this project reflects on how algorithms and data structures influence public discourse around critical AI literacy. It also highlights the importance of questioning the subjectivity embedded in classification systems and search engines, pushing for a nuanced understanding of literacy in the digital age.</p>
         </section>
 
+        <section id="source-code">
+            <h2>View the Code</h2>
+            <p>You can explore the code generated for this project in Google Colab:</p>
+            <!-- Link to Colab Repository -->
+            <a href="https://colab.research.google.com/drive/1vxWPT2-gdGvn1oZiruCkQ-jkgy28qWsz?usp=sharing" target="_blank" class="pdf-link">View in Google Colab</a>
+        </section>
+        
+        <section id="gallery">
+            <h2>Visualizations</h2>
+            <div class="gallery">
+                <img src="../assets/week-12-chart1.png" alt="Bar chart showing cumulative word frequencies across AI literacy searches, with categories like 'AI literacy' and 'critical AI literacy.'">
+                <img src="../assets/week-12-chart2.png" alt="Bar chart showing word frequencies from search result snippets, sorted by total frequency and categorized by AI literacy topics.">
+                <img src="../assets/week-12-chart3.png" alt="Stacked bar chart displaying the frequency of top 10 .edu domains from AI literacy-related searches.">
+                <img src="../assets/week-12-chart4.png" alt="A heatmap visualizing sentiment polarity and subjectivity across various literacy types on Wikipedia pages, with emotional literacy showing the highest subjectivity.">
+            </div>
+
+<!-- Lightbox Container -->
+<div class="lightbox" id="lightbox">
+    <img src="" alt="Zoomed-in view">
+    </div>
+        </section>
+
         <section id="tools">
             <h2>Tools & Details</h2>
-            <p><strong>Date:</strong> September 2024</p>
+            <p><strong>Date:</strong> November 2024</p>
             <p><strong>Tools:</strong></p>
             <p>Google Programmable Search Engine (PSE)</p>
 <p>MediaWiki API (for Wikipedia data)</p>
@@ -55,5 +77,6 @@
     <footer>
         <p><a href="../index.html" class="portfolio-link">Back to Portfolio</a></p>
     </footer>
+    <script src="../scripts.js"></script>
 </body>
 </html>
