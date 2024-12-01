@@ -363,3 +363,54 @@ footer a.portfolio-link:hover {
     cursor: pointer;
     z-index: 1001;
 }
+.pdf-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #00ff99; /* Accent color */
+    color: #121212;
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.pdf-link:hover {
+    background-color: #00cc88; /* Darker shade on hover */
+    color: #ffffff; /* Change text color for better contrast */
+}
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts based on screen size */
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center; /* Centers the grid items */
+}
+
+.video-container {
+    text-align: center;
+}
+
+video {
+    max-height: 300px; /* Limits the height */
+    height: 100%; /* Ensures the height respects max-height */
+    width: auto; /* Adjust width dynamically to maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+.video-container p {
+    margin-top: 10px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+@media (max-width: 768px) {
+    video {
+        max-width: 100%; /* Ensure videos are as wide as the screen */
+    }
+}
