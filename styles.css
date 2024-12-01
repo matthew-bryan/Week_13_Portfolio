@@ -90,9 +90,34 @@ h2 {
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 30px 0;
     background-color: #1e1e1e;
     color: #888;
+    margin-top: 40px; /* Space before footer */
+}
+
+/* Portfolio Link Styling */
+footer a.portfolio-link:link,
+footer a.portfolio-link:visited,
+footer a.portfolio-link:hover,
+footer a.portfolio-link:active {
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    color: #00ff99 !important; /* Accent color */
+    font-weight: bold !important;
+    font-size: 20px !important; /* Slightly larger for visibility */
+    text-decoration: none !important; /* Remove underline */
+    padding: 12px 25px !important; /* Padding for button-like appearance */
+    border: 2px solid #00cc88 !important; /* Border to match color */
+    border-radius: 5px !important; /* Rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+
+footer a.portfolio-link:hover {
+    background-color: #00ff99; /* Background color on hover */
+    color: #121212; /* Text color contrasts with the new background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    transform: translateY(-2px); /* Slight movement on hover for emphasis */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
 }
 
 /* Carousel Container */
